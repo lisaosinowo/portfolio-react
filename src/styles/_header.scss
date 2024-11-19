@@ -1,0 +1,66 @@
+@import "./variables";
+
+.header-wrapper {
+    height: 400px;
+    max-height: 400px;
+}
+
+.header-container {
+    width: 75%;
+    height: 385px;
+    min-width: 1030px;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#thumbnail {
+    width: 85%;
+    max-width: 900px;
+    height: 280px;
+}
+
+#profile-pic {
+    position: absolute;
+    display: flex;
+    top: 210px;
+    margin-left: -520px;
+    width: 175px;
+    max-width: 180px;
+    z-index: 100;
+    border-radius: 50%;
+    border: 5px solid $white;
+}
+
+#profile-pic:hover {
+    border: 5px solid $lilac;
+}
+
+.follow-btn {
+    position: absolute;
+    color: $black;
+    background-color: $white;
+    font-family: $main-font;
+    margin-top: 25px;
+    right: 178px;
+    height: 45px;
+    width: 110px;
+    border-radius: 9999px;
+    border: none;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    background-color: $lilac;
+    color: $white;
+}

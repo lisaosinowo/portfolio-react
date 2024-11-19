@@ -1,0 +1,229 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    color: $white;
+    font-family: $main-font;
+}
+
+.main-section, .feed-section, .about-section {
+    margin: auto;
+    max-width: 690px;
+    min-width: 630px;
+    @include section-width;
+}
+
+.main-wrapper {
+    margin: auto;
+    @include section-width;
+}
+
+.profile-name {
+    display: flex;
+    position: relative;
+}
+
+.profile-name > h1 {
+    font-size: 38px;
+}
+
+.profile-name > img {
+    padding-left: 5px;
+    height: 30px;
+    align-self: center;
+}
+
+#username {
+    padding-bottom: 5px;   
+    color: $grey; 
+}
+
+.profile-quote {
+    display: flex;
+}
+
+.profile-quote p {
+    padding-bottom: 5px;
+}
+
+.profile-quote p, #header-para-desc {
+    font-size: 15px;
+}
+
+.profile-quote img {
+    padding-left: 5px;
+    height: 25px;
+}
+
+.profile-details {
+    display: flex;
+    gap: 15px;
+    padding-top: 12px;
+}
+
+.profile-details img {
+    width: 25px;
+    padding-right: 5px;
+}
+
+.prof-details-sections {
+    display: flex;
+}
+
+.prof-details-sections p, .prof-details-sections a {
+    color: $grey;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.portfolio-sections {
+    display: grid;
+    grid-template-columns: repeat(4, calc(100%/4));
+    margin-top: 45px;
+}
+
+.portfolio-sections span {
+    text-align: center;
+    font-weight: 680;
+}
+
+.portfolio-sections a {
+    text-decoration: none;
+    color: $grey;
+}
+
+.portfolio-sections span:hover, .portfolio-sections span:focus {
+    background-color: $dark-navy2;
+    cursor: pointer;
+}
+
+.portfolio-sections-container {
+    position: sticky;
+}
+
+.active {
+    border-bottom: 4px double $lilac;
+}
+
+span {
+    line-height: 50px;
+}
+
+// FEED START
+
+.feed-section-containers {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid $dark-navy3;
+}
+
+.feed-section-containers:hover {
+    border: 3px solid rgba(128, 128, 128, 0.404);
+}
+
+.feed-container {
+    width: 90%;
+}
+
+.feed-content {
+    margin-top: 20px;
+}
+
+// FEED SECTION 1 START
+
+.feed-top-content {
+    display: flex;
+}
+
+.profile-pic-pin {
+    display: block;
+    width: 10%;
+}
+
+#pushpin-img {
+    display: flex;
+    width: 20px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+#mini-profile-pic-pinned, .mini-profile-pic {
+    width: 48px;
+    border-radius: 9999px;
+}
+
+.feed-content-info {
+    width: 80%;
+}
+
+#pinned-name {
+    margin: 0;
+    font-size: 13px;
+    padding-bottom: 4px;
+}
+
+.name-date-pinned, .name-date {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 6px;
+}
+
+.name-date {
+    margin-top: -2%;
+}
+
+.name-date-name {
+    padding-right: 3px;
+}
+
+.name-date-pinned img, .name-date img {
+    width: 20px;
+    height: 15px;
+}
+
+.username-feed, .name-date-date, .dot-name-date {
+    color: $grey;
+}
+
+.username-feed, .dot-name-date, .blue-tick {
+    padding-right: 5px;
+}
+
+.feed-desc-container {
+    display: flex;
+    justify-content: end;
+    margin-top: -40px;
+
+}
+
+.feed-desc {
+    display: block;
+    width: 90%;
+}
+
+.feed-desc p {
+    padding-bottom: 14px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.photo-screenshot {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.link-to-sites {
+    margin-left: 93%;
+    width: 5%;
+}
+
+.feed-desc .like-heart {
+    margin-left: 88%;
+    width: 5%;
+}
+
