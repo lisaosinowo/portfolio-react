@@ -198,7 +198,6 @@ span {
     display: flex;
     justify-content: end;
     margin-top: -40px;
-
 }
 
 .feed-desc {
@@ -226,4 +225,15 @@ span {
     margin-left: 88%;
     width: 5%;
 }
+
+// ABOUT SECTION START
+
+.about-main-container {
+    margin-top: 40px;
+}
+
+.about-container p, .about-container h1 {
+    padding-bottom: 20px;
+}
+
 
