@@ -8,8 +8,9 @@ import linkIMG from "../images/main/link.png";
 import birthdaycakeIMG from "../images/main/birthday-cake.png";
 import calendarIMG from "../images/main/calendar.png";
 import lisaIMG from "../images/lisa.jpg";
-import lisaPinned from "../images/feed/lisa-pinned.jpg";
+import lisaPinned from "../images/lisa_hero2.png";
 import pushpinIMG from "../images/feed/pushpin.png";
+import githubIMG from "../images/projects/github-icon-2.svg";
 
 const Main = () => {
   // State to track the active section
@@ -104,17 +105,17 @@ const Main = () => {
                 <span
                   className="nav-links"
                   tabIndex={0}
-                  onClick={() => setActiveSection("portfolio")}
+                  onClick={() => setActiveSection("projects")}
                 >
                   Projects
                 </span>
-                <span
+                {/* <span
                   className="nav-links"
                   tabIndex={0}
                   onClick={() => setActiveSection("contact")}
                 >
                   Contact
-                </span>
+                </span> */}
               </div>
             </div>
           </div>
@@ -146,9 +147,9 @@ const Main = () => {
                 <div className="feed-desc-container">
                   <div className="feed-desc">
                     <p>
-                      Hi User! Welcome to my Portfolio🤗 This is a space where I
-                      post my coding journey with Python, HTML, CSS, JavaScript.
-                      Feel free to browse through this site!😋
+                      Welcome to my Portfolio🤗 This is a space where I post my
+                      coding journey with Python, HTML, CSS + SASS, JavaScript
+                      and React. Feel free to browse through this site!😋
                       #FutureFullstackDeveloper
                     </p>
                     <img className="photo-screenshot" src={lisaPinned} alt="" />
@@ -184,10 +185,38 @@ const Main = () => {
               </p>
 
               <p className="about-info">
+                In January 2025 I will be starting a 16-week CFGdegree in
+                Full-stack development with a +Masters in Cyber Security with
+                Code First Girls. This course includes HTML, CSS, JavaScript,
+                React, TypeScript and Angular.
+              </p>
+
+              <p className="about-info">
                 I am known to be a resilient and determinted character who
                 doesn't shy away from complex problems/tasks. I am always up for
                 a challenge which also fuels my coding confidence.
               </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {activeSection === "projects" && (
+        <section id="projectsMaterial" class="projects-section">
+          <div className="projects-main-container">
+            <div className="projects-container">
+              <h1>My Projects 😎</h1>
+              <p className="projects-info">
+                Press the GitHub cat to view my projects on Github!
+              </p>
+              <div className="project-btn">
+                <a
+                  href="https://github.com/lisaosinowo?tab=repositories"
+                  target="_blank"
+                >
+                  <img id="github-img" src={githubIMG} alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </section>

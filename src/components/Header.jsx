@@ -16,7 +16,12 @@ const Header = () => {
             <img id="profile-pic" src={Lisa} alt="" />
             {/* <button className="follow-btn">Follow Me</button> */}
           </div>
-          <button className="follow-btn">Follow</button>
+          <a
+            href="https://www.linkedin.com/in/lisa-osinowo-3bb18b236/"
+            target="_blank"
+          >
+            <button className="follow-btn">Follow</button>
+          </a>
         </div>
       </div>
     </>

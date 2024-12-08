@@ -6,7 +6,7 @@
     font-family: $main-font;
 }
 
-.main-section, .feed-section, .about-section {
+.main-section, .feed-section, .about-section, .projects-section {
     margin: auto;
     max-width: 690px;
     min-width: 630px;
@@ -34,15 +34,14 @@
 }
 
 #username {
-    padding-bottom: 5px;   
     color: $grey; 
 }
 
-.profile-quote {
+.profile-quote, .prof-details-sections {
     display: flex;
 }
 
-.profile-quote p {
+.profile-quote p, #username {
     padding-bottom: 5px;
 }
 
@@ -66,10 +65,6 @@
     padding-right: 5px;
 }
 
-.prof-details-sections {
-    display: flex;
-}
-
 .prof-details-sections p, .prof-details-sections a {
     color: $grey;
     text-decoration: none;
@@ -78,7 +73,7 @@
 
 .portfolio-sections {
     display: grid;
-    grid-template-columns: repeat(4, calc(100%/4));
+    grid-template-columns: repeat(3, calc(100%/3));
     margin-top: 45px;
 }
 
@@ -102,7 +97,7 @@
 }
 
 .active {
-    border-bottom: 4px double $lilac;
+    border-bottom: 4px double $sky-blue;
 }
 
 span {
@@ -114,13 +109,13 @@ span {
 .feed-section-containers {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px 0;
     border-radius: 10px;
     border: 3px solid $dark-navy3;
 }
 
-.feed-section-containers:hover {
-    border: 3px solid rgba(128, 128, 128, 0.336);
+.feed-section-containers:hover, .about-main-container:hover, .projects-main-container:hover {
+    border: 3px solid $grey1;
 }
 
 .feed-container {
@@ -228,12 +223,41 @@ span {
 
 // ABOUT SECTION START
 
-.about-main-container {
-    margin-top: 40px;
+.about-main-container, .projects-main-container {
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 3px solid $dark-navy3;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container, .projects-container {
+    width: 89%;
 }
 
 .about-container p, .about-container h1 {
     padding-bottom: 20px;
 }
+
+.about-container h1 {
+    padding-top: 15px;
+}
+
+// PROJECTS SECTION START
+
+#github-img {
+    width: 200px;
+}
+
+.projects-container > h1 {
+    padding: 15px 0;
+}
+
+.project-btn {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
 
 
