@@ -26,6 +26,10 @@ const Main = () => {
     }
   }, []);
 
+  window.onload = () => {
+    window.scrollTo(0, 0);
+  };
+
   function handleSpanClick(event) {
     // Remove 'active' class from all spans
     spans.forEach((span) => span.classList.remove("active"));
